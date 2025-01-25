@@ -60,14 +60,14 @@ console.log(customers);
 let order = {
     orderId: 324,
     customerName: "George Bush",
-    amount: 360
+    amount: 360,
     // Sets up object Order
 
-    calculateTax: function() {
+    calculateTax: function(){
         const taxRate = 0.10; //%10 tax rate
         return this.amount * taxRate;
     }
-}
+};
 //Prints order details and tax amount to console
 console.log("Order Details:");
 console.log("Order ID:", order.orderId);
