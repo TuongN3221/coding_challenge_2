@@ -16,3 +16,16 @@ let totalScore = scores.reduce((sum, scores) => sum + scores, 0); //Sums scores
 console.log(totalScore); //Output of scores
 let average = totalScore / scores.length;
 console.log("Average:", average);
+
+// Task 3 - Working with Objects
+let employee = {
+    name: "Good Fish",
+    age: 100,
+    department: "Coral Management",
+    isActive: true
+};// sets up employee
+
+employee.department = "Cannibalism Supervision"; // Updates from Coral Management to Cannibalism Supervision
+employee.position = "Taste Tester";// Adds new position to object
+
+console.log(employee);
