@@ -29,3 +29,29 @@ employee.department = "Cannibalism Supervision"; // Updates from Coral Managemen
 employee.position = "Taste Tester";// Adds new position to object
 
 console.log(employee);
+
+// Task 4 - Array of Objects
+let customers = [
+    {
+        name: "Spongebob",
+        email: "spongepants@krustykrab.com",
+        purchaseAmount: 0.62
+    },
+    {
+        name: "Eugene Krabs",
+        email: "mrkrabs@krustykrab.com",
+        purchaseAmount: 99.00
+    },
+    {
+        name: "Squidward Tentacles",
+        email: "tentacles@krustykrab.com",
+        purchaseAmount: 200.00
+    }
+];// Decalre array of customers
+
+customers.push({
+    name: "Plankton",
+    email: "karen@chumbucket.com",
+    purchaseAmount: 132.32
+});// Adds new Customer object to array
+console.log(customers);
