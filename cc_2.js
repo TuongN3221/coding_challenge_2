@@ -55,3 +55,25 @@ customers.push({
     purchaseAmount: 132.32
 });// Adds new Customer object to array
 console.log(customers);
+
+//Task 5 - Object Methods
+let order = {
+    orderId: 324,
+    customerName: "George Bush",
+    amount: 360
+    // Sets up object Order
+
+    calculateTax: function() {
+        const taxRate = 0.10; //%10 tax rate
+        return this.amount * taxRate;
+    }
+}
+//Prints order details and tax amount to console
+console.log("Order Details:");
+console.log("Order ID:", order.orderId);
+console.log("Customer Name:", order.customerName);
+console.log("Order Amount:", order.amount);
+
+//Logs tax amount
+let taxAmount = order.calculateTax();
+console.log("Tax Amount (10%):", taxAmount);
